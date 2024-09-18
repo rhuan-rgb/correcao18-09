@@ -18,8 +18,8 @@ class AppController {
 
   //Define as rotas da nossa API
   routes() {
-    const apiRoutes = require('./routes/apiRoutes');
-    this.express.use('/rhuan_par_primo/',apiRoutes);
+    const apiRoutes = require("./routes/apiRoutes");
+    this.express.use("/rhuan_par_primo/", apiRoutes);
 
     //Define uma rota GET para o caminho health
     this.express.get("/health/", (req, res) => {
